@@ -40,17 +40,17 @@ return {
       lazygit:toggle()
     end
 
-    -- local node = Terminal:new { cmd = 'node', hidden = true }
-    --
-    -- function _NODE_TOGGLE()
-    --   node:toggle()
-    -- end
-    --
-    -- local ncdu = Terminal:new { cmd = 'ncdu', hidden = true }
-    --
-    -- function _NCDU_TOGGLE()
-    --   ncdu:toggle()
-    -- end
+    local node = Terminal:new { cmd = 'node', hidden = true }
+
+    function _NODE_TOGGLE()
+      node:toggle()
+    end
+
+    local ncdu = Terminal:new { cmd = 'ncdu', hidden = true }
+
+    function _NCDU_TOGGLE()
+      ncdu:toggle()
+    end
 
     local htop = Terminal:new { cmd = 'htop', hidden = true }
 
